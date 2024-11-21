@@ -37,7 +37,7 @@ Columns had mismatch counts
 
 Below is the mapping of categories available in the dataset to those mentioned in the document
 
-| Old Category                              | New Category                                             |
+| Old Category (From Dataset)                            | New Category  (From Document)                                           |
 |-------------------------------------------|----------------------------------------------------------|
 | Cyber Bullying  Stalking  Sexting         | Cyber Bullying/Stalking/Sexting                          |
 | Fraud CallVishing                         | Fraud Call/Vishing                                       |

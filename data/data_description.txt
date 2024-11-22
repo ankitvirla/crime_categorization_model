@@ -1,0 +1,14 @@
+- old_vs_new_cat.xlsx  
+  - train_test_dataset_subcategory: Grouped and mapped subcategories from the train and test dataset.  
+  - test_dataset_category: Contains mapped categories of test data along with the document.  
+  - train_dataset_category: Contains mapped categories of train data along with the document.  
+  - doc_sub_top_category: Draft document containing category and subcategory information.  
+
+- train_data_from_portal.csv: Train dataset downloaded from the IndiaAI portal.  
+- test_data_from_portal.csv: Test dataset downloaded from the IndiaAI portal.  
+
+- train_clean_data.xlsx: Cleaned train dataset.  
+- test_clean_data.xlsx: Cleaned test dataset.  
+
+- train_data_with_predicted_category_subcategory.xlsx: Dataset with inferred categories and subcategories using the FastText-trained model and rule-based engine.  
+- test_data_with_predicted_category_subcategory.xlsx: Dataset with inferred categories and subcategories using the FastText-trained model and rule-based engine.  

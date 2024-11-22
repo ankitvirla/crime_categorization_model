@@ -1,9 +1,10 @@
 import pandas as pd
 import fasttext
 # Load your data
-df = pd.read_excel('data/train.xlsx')
+df = pd.read_excel('data/train_clean_data.xlsx')
 
 # Prepare data in FastText format
+# OR you can download it from here: https://drive.google.com/file/d/1kegRHWMRJHzsoI3lVVo6JhkLdGnMO4p5/view?usp=sharing
 def prepare_fasttext_format(df, output_file):
     with open(output_file, 'w') as f:
         for _, row in df.iterrows():

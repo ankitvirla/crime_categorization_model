@@ -1,0 +1,68 @@
+1. any_other_cyber_crime
+
+2. cyberbullying_and_online_harassment
+Cyber Bullying/Stalking/Sexting
+Cheating by Impersonation
+Fake/Impersonating Profile
+Profile Hacking/Identity Theft
+Impersonating Email
+Intimidating Email
+Unauthorized access to social media accounts
+Child Pornography/Child Sexual Abuse Material (CSAM)
+Rape/Gang Rape-Sexually Abusive Content
+Sale, Publishing, and Transmitting Obscene Material/Sexually Explicit Material
+Provocative Speech of Unlawful Acts
+Disinformation or misinformation campaigns (if used to harass or manipulate individuals)
+Online Cyber Trafficking (often involves hacking networks and systems to engage in illegal trafficking)
+
+3. financial_frauds
+Debit/Credit Card Fraud
+SIM Swap Fraud
+Internet Banking-Related Fraud
+Business Email Compromise/Email Takeover
+E-Wallet Related Frauds
+Fraud Call/Vishing
+Demat/Depository Fraud
+UPI-Related Frauds
+Aadhaar Enabled Payment System (AEPS) Fraud
+Online Job Fraud
+Online Matrimonial Fraud
+Cryptocurrency Crime
+Online Gambling/Betting Fraud (since it may involve financial exploitation through illegal betting platforms)
+
+4. system_hacking_and_damage
+Email Phishing
+Email Hacking
+Damage to Computer Systems
+Tampering with computer source documents
+Defacement/Hacking
+Unauthorized Access/Data Breach
+Ransomware
+Targeted scanning/probing of critical networks/systems
+Compromise of critical systems/information
+Unauthorized access to IT systems/data
+Defacement of websites or unauthorized changes, such as inserting malicious code or external links
+Malicious code attacks (e.g., virus, worm, Trojan, Bots, Spyware, Ransomware, Crypto miners)
+Attacks on servers (Database, Mail, DNS) and network devices (Routers)
+Identity theft, spoofing, and phishing attacks
+Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks
+Attacks on critical infrastructure, SCADA, operational technology systems, and wireless networks
+Attacks on applications (e.g., E-Governance, E-Commerce)
+Data breaches
+Data leaks
+Attacks on Internet of Things (IoT) devices and associated systems, networks, and servers
+Attacks or incidents affecting digital payment systems
+Attacks via malicious mobile apps
+Fake mobile apps
+Attacks or suspicious activities affecting cloud computing systems, servers, software, and applications
+Attacks or malicious/suspicious activities affecting systems related to Big Data, Blockchain, virtual assets, and robotics
+Attacks on systems related to Artificial Intelligence (AI) and Machine Learning (ML)
+Backdoor attacks
+Zero-day exploits
+Password attacks
+Web application vulnerabilities
+Hacking
+Malware attacks
+Cyber Terrorism (as it frequently involves damage to systems and critical infrastructure)
+Supply chain attacks (a form of hacking that targets vulnerabilities in supply chain networks)
+Cyber espionage (as it involves unauthorized access and manipulation of data or systems)

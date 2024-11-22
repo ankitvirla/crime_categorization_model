@@ -258,7 +258,7 @@ def check_sub_category_lsa(category, incident_description, tokenizer, lemmatizer
     try:
         subcategories = categories.get(category, {})
         if not subcategories:
-            return "any_other_cyber_crime", None
+            return "Any Other Cyber Crime", None
         
         subcategory_descriptions = list(subcategories.values())
         subcategory_titles = list(subcategories.keys())

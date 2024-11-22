@@ -148,13 +148,21 @@ Confusion matrix and classification report on test data using different algorith
    - Optimized hyperparameters to handle imbalanced data
     
 2. Subcategory Prediction
-   - Applied rule-based mappings for subcategories
+   - Primary Classification: FastText model classifies the data into one of four categories: any_other_cyber_crime, cyberbullying_and_online_harassment, financial_frauds, or system_hacking_and_damage.
+
+   - Keyword Matching: Based on the primary category, a set of keyword matching techniques (bi-grams, single-grams, and exact phrases) are used to identify a relevant subcategory.
+
+   - Latent Semantic Analysis (LSA): If no suitable subcategory is found using keywords, LSA is employed to identify the most similar subcategory based on the underlying meaning of the incident description.
+      This process ensures robust categorization and subcategorization by combining both keyword-based and semantic methods to handle a wide range of incident descriptions effectively.
+   
    - Grouped predicted subcategories into the top-level categories
      
 ## Results and Performance
-- Accuracy:
-- Precision:
-- Recall:
+We evaluated 100 records from testing data here is the result. Checke this file [file](data/Validation100.xlsx)
+- Accuracy: 0.92
+- Precision: 0.91
+- Recall: 0.89
+- F1 Score: 0.83
 - Processing Speed: FastText completed predictions significantly faster compared to transformer-based models.
 
 
@@ -162,10 +170,65 @@ Confusion matrix and classification report on test data using different algorith
 1. Clone the repository:
    ```bash
    git clone https://github.com/ankitvirla/crime_categorization_model.git
-   cd crime-categorization
+   cd crime_categorization_model
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
 3. Do Inference: Modify the script based on input and use inference.py
    ```bash
    python3 scripts/inference.py
+
+
+## Contributors
+
+### Team Members
+- [Jagannathan Arumugam](https://www.linkedin.com/in/jagannathan-arumugam-9bb89822/) - Project Lead  
+- [Kaushambi Chandel](https://github.com/Kaushambi14)
+- [Ebin Jose Mathew](https://github.com/Ebinjose10) 
+- [Yakkanti Tulasi Kishore Reddy](https://github.com/kishoreyakkanti) 
+- [Ankit Birla](https://github.com/ankitvirla)
+
+
+
+## Additional Data Limitations
+
+#### Imbalanced Dataset:  
+- The dataset was skewed heavily toward certain categories (e.g., financial frauds) while other categories had significantly fewer records, leading to poor model performance on underrepresented classes.
+
+#### Incomplete Data:  
+- 3,783 records were missing subcategory labels, reducing the quality and coverage of training data.  
+- The test dataset lacked category information, which led to reliance on manual validation for evaluation.
+
+#### Inconsistent Labeling:  
+- Subcategories were inconsistently labeled or merged, requiring significant preprocessing to standardize the data.
+
+#### Insufficient Granularity:  
+- The mapping of subcategories to top-level categories resulted in the loss of finer details in some cases, which could limit the model's usefulness in specific contexts.
+
+#### Misclassified Records:  
+- Several records were found to be incorrectly labeled in the dataset, reducing model accuracy and making it harder to generalize predictions.
+
+### Category limitations: 
+- For some data, there was no exact matching category for the given details. In such cases, we classify it to the closest matching category.
+
+
+
+## Additional Future Improvements
+
+#### Handle Emerging Trends:  
+- Regularly update the dataset to include new types of cybercrimes or frauds to ensure the model stays relevant.
+
+#### Cross-Lingual Support:  
+- Train models to handle multilingual datasets, allowing classification of crime details provided in different languages.
+
+#### Real-Time Prediction System:  
+- Develop an API or web-based GUI to allow users to classify text in real-time, making the solution more user-friendly.
+
+#### Performance Optimization:  
+- Optimize the model for deployment on low-resource devices, such as edge systems, to expand usability.
+
+#### Integration with Reporting Tools:
+- Develop integrations with law enforcement tools to automate categorization of cybercrime reports for faster processing.
+
+#### Regular Model Evaluation:
+- Continuously monitor the model’s performance with real-world data to identify biases, misclassifications, or performance drops.
